@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+#define int long long
+#define pb push_back
+#define all(x) (x).begin(), (x).end()
+#define MOD 1000000007
+#define PI 3.141592653589793238462643383279502884
+#define debug(x) cerr << #x << ":" << x << endl;
+using namespace std;
+
+void solve() {
+    int n,m;cin>>n>>m;
+    bool flag=false;
+    for(int i=n+1;i<=m;i++){
+        int factor=0;
+        for(int j=1;j<=i;j++)if(i%j==0)factor++;
+        if(factor==2){
+            if(i==m)flag=true;
+            break;
+        }
+    }
+    cout<<(flag?"YES":"NO")<<endl;
+}
+
+int32_t main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.precision(10);
+    int t = 1;
+    //cin >> t;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}
