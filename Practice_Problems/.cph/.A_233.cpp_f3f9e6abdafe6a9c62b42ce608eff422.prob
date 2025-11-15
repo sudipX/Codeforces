@@ -1,0 +1,1 @@
+{"name":"Local: A_233","url":"d:\\Codeforces\\Practice_Problems\\A_233.cpp","tests":[{"id":1763209429796,"input":"1\n","output":"-1\n"},{"id":1763209446276,"input":"2\n","output":"2 1"},{"id":1763209453049,"input":"4","output":"2 1 4 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Codeforces\\Practice_Problems\\A_233.cpp","group":"local","local":true}
