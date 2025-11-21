@@ -12,8 +12,8 @@ void solve() {
     string a,b;cin>>a>>b;
     int evenA=0,evenB=0,oddA=0,oddB=0;
     for(int i=0;i<n;i++){
-        if(i&1){if(a[i]=='1')oddA++;if(b[i]=='1')oddB++;}
-        else{if(a[i]=='1')evenA++;if(b[i]=='1')evenB++;}
+        if(i&1){oddA+=a[i]=='1';oddB+=b[i]=='1';}
+        else{{evenA+=a[i]=='1';evenB+=b[i]=='1';}}
     }
     int odd=oddB+evenA,even=evenB+oddA;
     cout<<((odd>n/2||even>(n+1)/2)?"NO\n":"YES\n");
